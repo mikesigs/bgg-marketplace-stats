@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+        <PackageReference Include="Microsoft.Extensions.Configuration" />
+        <PackageReference Include="Microsoft.Extensions.Http" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\BGGMarketPlaceStats.Core\BGGMarketPlaceStats.Core.csproj" />
+    </ItemGroup>
+</Project>

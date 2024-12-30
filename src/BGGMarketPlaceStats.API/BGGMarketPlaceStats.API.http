@@ -1,0 +1,6 @@
+@BGGMarketPlaceStats.API_HostAddress = http://localhost:57679
+
+GET {{BGGMarketPlaceStats.API_HostAddress}}/stats/191189/
+Accept: application/json
+
+###

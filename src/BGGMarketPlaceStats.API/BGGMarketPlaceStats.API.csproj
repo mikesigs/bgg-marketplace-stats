@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <ItemGroup>
+    <Content Include="properties\launchSettings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BGGMarketPlaceStats.Core\BGGMarketPlaceStats.Core.csproj" />
+    <ProjectReference Include="..\BGGMarketPlaceStats.Infrastructure\BGGMarketPlaceStats.Infrastructure.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+</Project>

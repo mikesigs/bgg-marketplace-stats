@@ -1,0 +1,33 @@
+# Set the default behavior to automatically normalize line endings,
+# in case people don't have core.autocrlf set.
+*        text=auto
+*.cs     text=auto diff=csharp
+
+# .NET specific files
+*.csproj text merge=union
+*.sln    text merge=union
+*.config text
+*.json   text
+*.yml    text
+*.yaml   text
+
+*.doc    diff=astextplain
+*.docx   diff=astextplain
+*.dot    diff=astextplain
+*.pdf    diff=astextplain
+*.rtf    diff=astextplain
+
+*.jpg    binary
+*.png    binary
+*.gif    binary
+*.exe    binary
+
+# Force bash scripts to always use lf line endings so scripts will work in a *nix environment
+*.in     text eol=lf
+*.sh     text eol=lf
+Makefile text eol=lf
+
+# Likewise, force cmd and batch scripts to always use crlf
+*.cmd    text eol=crlf
+*.bat    text eol=crlf
+*.sql    text eol=crlf
